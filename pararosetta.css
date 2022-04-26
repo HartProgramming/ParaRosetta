@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  background-color: black;
+  outline: 0;
+}
+
+.logo-div {
+  height: 400px;
+  width: 95%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+}
+
+.landing-page {
+  background-color: white;
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+/* Add a class for opacity on landing page that triggers on hover javascript */
+.landing-opacity {
+  background-image: linear-gradient(to right, black, black);
+  height: 700px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  opacity: .8;
+}
+
+.pararosetta-company {
+  font-family: sans-serif;
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  animation: slide-down 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-300px);
+    color: black;
+  }
+  100% {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    position: relative;
+    margin-top: 350px;
+  }
+}
+
+.paracord-badass {
+  font-family: sans-serif;
+  display: flex;
+  font-size: 46px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: -60px;
+  animation: slide-up 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translate(500px, 500px);
+    color: black;
+  }
+  100% {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+.paracord-style {
+  font-family: sans-serif;
+  display: flex;
+  font-size: 46px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: -25px;
+  animation: slide-right 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate(10%, 50%);
+    color: black;
+  }
+  100% {
+    color: white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#pictures {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  margin-top: 50px;
+}
+
+hr {
+  width: 80%;
+  margin-top: 40px;
+  border-top: 3px solid white;
+}
+
+#pararosetta {
+  color: white;
+  font-size: 10vw;
+  font-family: sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+.paracord-pic {
+  border-radius: 50%;
+  height: 250px;
+}
+
+.img-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  font-size: 30px;
+  width: 180px;
+  border-radius: 10px;
+  border: 4px solid black;
+  height: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+}
+
+.more-info-button {
+  height: 70px;
+  width: 180px;
+  background-color: black;
+  color: white;
+  border: 4px solid white;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+#bracelets-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+#keychains-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+#lanyards-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+#belts-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+#wallets-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+#zipper-pulls-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+.more-info-div {
+  height: 500px;
+  width: 470px;
+  display: flex;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+  border: 3px solid black;
+  justify-content: flex-start;
+  flex-direction: column;
+  z-index: 10;
+  margin-top: -1600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.more-info-div-header {
+  font-family: sans-serif;
+  font-size: 48px;
+  display: flex;
+  letter-spacing: 1.8px;
+  justify-content: center;
+  margin: auto;
+  font-weight: 800;
+  position: relative;
+  margin-top: 98px;
+  margin-bottom: 30px;
+}
+
+.close-button {
+  display: flex;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  border: 3px solid black;
+  background-color: rgb(0, 0, 0);
+  margin-top: 3px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  height: 50px;
+  width: 100px;
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+.close-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.more-info-list {
+  color: black;
+  font-size: 32px;
+  font-family: sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: -00px;
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+  list-style-type: square;
+}
+
+#socials-section {
+  text-align: center;
+  color: white;
+}
+
+#socials {
+  font-size: 80px;
+  font-family: sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#edward {
+  height: 500px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#ul-socials {
+  list-style-type: none;
+  margin-top: 65px;
+  margin: auto;
+    display: flex;
+    line-height: 55px;
+    flex-direction: column;
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+.list-images-socials {
+  padding-top: 30px;
+  margin: 0;
+  height: 100px;
+  cursor: url("ParaRosettaCursor.png"), auto;
+}
+
+.social-text {
+  font-family: sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  display: inline;
+  letter-spacing: 1.3px;
+}
+
+.social-text a{
+    color: white;
+}
+
+#h2social {
+  font-family: sans-serif;
+  font-size: 46px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+#socials-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .more-info-div {
+    height: 500px;
+    width: 470px;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    border: 3px solid black;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 10;
+    margin-top: 5500px;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .more-info-div {
+    height: 500px;
+    width: 470px;
+    display: flex;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    border: 3px solid black;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 10;
+    margin-top: -2200px;
+    position: relative;
+    overflow: hidden;
+  }
+}
