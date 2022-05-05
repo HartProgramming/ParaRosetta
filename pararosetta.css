@@ -4,10 +4,19 @@ body {
   outline: 0;
 }
 
-.logo-div {
-  height: 400px;
+#image-cover{
   width: 95%;
-  position: relative;
+  height: 500px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.logo-div {
+   position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -32,43 +41,62 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
+  align-content: center;
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
 
 /* Add a class for opacity on landing page that triggers on hover javascript */
-.landing-opacity {
-  background-image: linear-gradient(to right, black, black);
-  height: 700px;
-  width: 100%;
-  outline: 0;
-  border: 0;
-  opacity: .8;
+
+
+
+.para-com{
+  color: white;
+  justify-content: center;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 84px;
+  position: relative;
+  margin-top: 200px;
+  align-content: center;
 }
 
-.pararosetta-company {
+#ara{
+  color: black;
+}
+
+#o{
+  color: black;
+}
+
+.paracord-header{
   font-family: sans-serif;
-  font-size: 72px;
   display: flex;
+  font-size: 76px;
+  align-items: center;
   justify-content: center;
   font-weight: 600;
-  animation: slide-down 3s linear;
+  position: relative;
+  margin-top: -60px;
+  animation: slide 3s linear;
   animation-fill-mode: forwards;
 }
 
-@keyframes slide-down {
+@keyframes slide {
   0% {
-    transform: translateY(-300px);
+    transform: translate(0, -100px);
     color: black;
   }
   100% {
+    color: white;
     display: flex;
     justify-content: center;
-    align-content: center;
-    color: white;
     position: relative;
-    margin-top: 350px;
+    font-weight: 600;
+    transform: translate(0, 0);
+    align-content: center;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -78,7 +106,7 @@ body {
   font-size: 46px;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: -60px;
   animation: slide-up 3s linear;
   animation-fill-mode: forwards;
@@ -86,7 +114,7 @@ body {
 
 @keyframes slide-up {
   0% {
-    transform: translate(500px, 500px);
+    transform: translate(-100px, -100px);
     color: black;
   }
   100% {
@@ -94,6 +122,10 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    transform: translate(0, 0);
+    font-weight: 600;
+    align-content: center;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -103,7 +135,7 @@ body {
   font-size: 46px;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: -25px;
   animation: slide-right 3s linear;
   animation-fill-mode: forwards;
@@ -111,7 +143,7 @@ body {
 
 @keyframes slide-right {
   0% {
-    transform: translate(10%, 50%);
+    transform: translate(-300px, -300px);
     color: black;
   }
   100% {
@@ -119,7 +151,11 @@ body {
     position: relative;
     justify-content: center;
     display: flex;
+    transform: translate(0, 0);
     justify-content: center;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    align-content: center;
   }
 }
 
@@ -129,7 +165,8 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   position: relative;
-  margin-top: 50px;
+  margin-top: auto;
+  background-color: white;
 }
 
 hr {
@@ -139,7 +176,7 @@ hr {
 }
 
 #pararosetta {
-  color: white;
+  color: black;
   font-size: 10vw;
   font-family: sans-serif;
   font-weight: 800;
@@ -147,14 +184,36 @@ hr {
   justify-content: center;
 }
 
+#gear-cat{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: auto;
+}
+
 .img-container {
   position: relative;
   text-align: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 25px;
+  margin: 10px;
+  border: 8px solid black;
 }
 
-.paracord-pic {
+.img-container img{
   border-radius: 50%;
-  height: 250px;
+  height: 400px;
+  width: 400px;
+  transition: transform 1s ease;
+}
+
+.img-container:hover img{
+  transform: scale(1.3);
 }
 
 .img-text {
@@ -165,12 +224,13 @@ hr {
   font-weight: 700;
   color: black;
   background-color: white;
-  font-size: 30px;
-  width: 180px;
+  font-size: 26px;
+  opacity: 1;
+  width: 100%;
   border-radius: 10px;
-  border: 4px solid black;
+  border: 4px solid white;
   height: 70px;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   align-items: center;
@@ -268,9 +328,9 @@ hr {
 
 .more-info-list {
   color: black;
-  font-size: 32px;
+  font-size: 26px;
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   margin: auto;

@@ -1,7 +1,8 @@
 const logoDiv = document.querySelector(".logo-div")
 const landingPage = document.querySelector(".landing-page");
 const paraCompany = document.querySelector(".pararosetta-company");
-const paraCompID = document.querySelector("#para-com");
+const paraCompID = document.querySelector("#para-head");
+const logoImg = document.querySelector("#logo");
 const badass = document.querySelector("#badass");
 const hardcore = document.querySelector("#hardcore");
 const paraStyle = document.querySelector("#paracord-style");
@@ -30,15 +31,20 @@ const lanyardsDiv = document.createElement("div");
 const beltsDiv = document.createElement("div");
 const walletsDiv = document.createElement("div");
 const zippersDiv = document.createElement("div");
+const backOp = document.querySelector(".background-opacity");
 
-logoDiv.addEventListener("mouseover", function () {
+imgCover.addEventListener("mouseover", function () {
     logoDiv.setAttribute("style", "display: none;")
-    imgCover.classList.add("landing-opacity")
+    imgCover.style.display = "flex";
+    imgCover.style.justifyContent = "center";
+    landingPage.classList.add("background-opacity")
+    logoImg.setAttribute("style", "display: none;")
     landingPage.style.border = "0";
     landingPage.style.outline = "0";
-    landingPage.style.backgroundImage = "url(https://imgs.search.brave.com/gGgHdE9eZPG1Jb0mcliMC732QjX6bI-_xbFfWKL9NTs/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pbWcu/ZXRzeXN0YXRpYy5j/b20vaWwvNTRmMWUy/LzEyMjc5OTY2OTQv/aWxfZnVsbHhmdWxs/LjEyMjc5OTY2OTRf/cGU3ai5qcGc_dmVy/c2lvbj0x)";
-    paraCompID.classList.add("pararosetta-company")
-    paraCompID.innerText = "ParaRosetta"
+    landingPage.style.backgroundImage = "url(Images/WolfBraceletFrontPageWebsite.jpeg)";
+    paraCompID.classList.add("para-com")
+    paraCompID.classList.add("paracord-header")
+    paraCompID.innerHTML = "ParaRosetta"
     badass.classList.add("paracord-badass");
     badass.innerText = "Fashion";
     paraStyle.classList.add("paracord-style")
