@@ -159,6 +159,36 @@ body {
   }
 }
 
+.etsy-animate {
+  font-family: sans-serif;
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: -25px;
+  animation: slide-down 3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translate(-300px, -300px);
+    color: black;
+  }
+  100% {
+    color: white;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    transform: translate(0, 200px);
+    justify-content: center;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    align-content: center;
+  }
+}
+
 #pictures {
   display: flex;
   justify-content: space-evenly;
@@ -214,23 +244,23 @@ hr {
 
 
 .img-text {
-  position: absolute;
   display: flex;
   justify-content: center;
   font-family: sans-serif;
   font-weight: 670;
   color: black;
   background-color: white;
-  font-size: 34px;
+  font-size: 32px;
   opacity: 1;
   width: 100%;
   border-radius: 10px;
   border: 4px solid white;
-  height: 120px;
-  top: 10%;
+  height: 140px;
+  top: 7%;
   letter-spacing: 1.4px;
   opacity: .8;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
   align-items: center;
 }
@@ -238,16 +268,36 @@ hr {
 .more-info-button {
   height: 70px;
   width: 180px;
-  background-color: black;
-  color: white;
-  border: 4px solid white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 4px solid rgb(0, 0, 0);
   opacity: 1;
-  margin: auto;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: auto;
+  padding-top: 15px;
+  justify-content: center;
+  display: flex;
+  left: 29.5%;
+  top: 10%;
+  z-index: 3;
   border-radius: 10px;
+    cursor: url("ParaRosettaCursor.png"), auto;
+
+}
+
+.style-pics{
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.style-pics, .img-text, .more-info-button, .more-info-div{
+  position: absolute;
 }
 
 #bracelets-text {
-  cursor: url("ParaRosettaCursor.png"), auto;
 }
 
 #keychains-text {
@@ -280,11 +330,10 @@ hr {
   border-radius: 20px;
   align-items: center;
   border: 3px solid black;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
-  z-index: 10;
-  margin-top: -1600px;
-  position: relative;
+  z-index: 4;
+  top: 25%;
   overflow: hidden;
 }
 
@@ -329,7 +378,7 @@ hr {
 
 .more-info-list {
   color: black;
-  font-size: 26px;
+  font-size: 38px;
   font-family: sans-serif;
   font-weight: 300;
   display: flex;
@@ -407,40 +456,52 @@ hr {
   align-content: center;
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 1000px) {
   .more-info-div {
     height: 500px;
     width: 470px;
     display: flex;
     margin: auto;
+    margin-top: -500px;
     background-color: white;
     border-radius: 20px;
     align-items: center;
     border: 3px solid black;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     z-index: 10;
-    margin-top: 5500px;
+    margin-top: 700px;
+    align-content: center;
     position: absolute;
     overflow: hidden;
   }
+  #bracelets-more-div{
+    margin-top: -450px;
+  }
+  #keychains-more-div{
+    margin-top: 50px;
+  }
+  #belts-more-div{
+    margin-top: 490px;
+  }
+  #wallets-more-div{
+    margin-top: 990px;
+  }
+  #zippers-more-div{
+    margin-top: 1490px;
+  }
 }
 
-@media screen and (max-width: 800px) {
-  .more-info-div {
-    height: 500px;
-    width: 470px;
-    display: flex;
-    margin: auto;
-    background-color: white;
-    border-radius: 20px;
-    align-items: center;
-    border: 3px solid black;
-    justify-content: flex-start;
-    flex-direction: column;
-    z-index: 10;
-    margin-top: -2200px;
-    position: relative;
-    overflow: hidden;
+@media screen and (min-width: 1001px) {
+  #belts-more-div{
+    margin-top: 250px;
   }
+  #wallets-more-div{
+    margin-top: 250px;
+  }
+  #zippers-more-div{
+    margin-top: 750px;
+  }
+  
 }
