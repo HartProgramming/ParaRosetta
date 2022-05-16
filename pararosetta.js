@@ -44,7 +44,6 @@ imgCover.addEventListener("mouseover", function () {
     logoImg.setAttribute("style", "display: none;")
     landingPage.style.border = "0";
     landingPage.style.outline = "0";
-    landingPage.style.backgroundImage = "url(WolfBraceletFrontPageWebsite.jpeg)";
     paraCompID.classList.add("para-com")
     paraCompID.classList.add("paracord-header")
     paraCompID.innerHTML = "ParaRosetta"

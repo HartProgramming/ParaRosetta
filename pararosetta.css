@@ -4,7 +4,7 @@ body {
   outline: 0;
 }
 
-#image-cover{
+#image-cover {
   width: 95%;
   height: 500px;
   display: flex;
@@ -16,7 +16,7 @@ body {
 }
 
 .logo-div {
-   position: relative;
+  position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -49,9 +49,7 @@ body {
 
 /* Add a class for opacity on landing page that triggers on hover javascript */
 
-
-
-.para-com{
+.para-com {
   color: white;
   justify-content: center;
   display: flex;
@@ -62,15 +60,7 @@ body {
   align-content: center;
 }
 
-#ara{
-  color: black;
-}
-
-#o{
-  color: black;
-}
-
-.paracord-header{
+.paracord-header {
   font-family: sans-serif;
   display: flex;
   font-size: 76px;
@@ -214,7 +204,7 @@ hr {
   justify-content: center;
 }
 
-#gear-cat{
+#gear-cat {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -235,13 +225,13 @@ hr {
   border: 8px solid black;
 }
 
-.img-container .style-pics{
+.img-container .style-pics {
   border-radius: 50%;
   height: 400px;
+  overflow: hidden;
   width: 400px;
   transition: transform 1s ease;
 }
-
 
 .img-text {
   display: flex;
@@ -258,7 +248,8 @@ hr {
   height: 140px;
   top: 7%;
   letter-spacing: 1.4px;
-  opacity: .8;
+  opacity: 0.8;
+  top: 40%;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%);
@@ -283,21 +274,24 @@ hr {
   top: 10%;
   z-index: 3;
   border-radius: 10px;
-    cursor: url("ParaRosettaCursor.png"), auto;
-
+  cursor: url("ParaRosettaCursor.png"), auto;
 }
 
-.style-pics{
+.style-pics {
   z-index: 1;
   display: flex;
   justify-content: center;
 }
 
-.style-pics, .img-text, .more-info-button, .more-info-div{
+.style-pics,
+.img-text,
+.more-info-button,
+.more-info-div {
   position: absolute;
 }
 
 #bracelets-text {
+  cursor: url("ParaRosettaCursor.png"), auto;
 }
 
 #keychains-text {
@@ -319,7 +313,6 @@ hr {
 #zipper-pulls-text {
   cursor: url("ParaRosettaCursor.png"), auto;
 }
-
 
 .more-info-div {
   height: 500px;
@@ -415,9 +408,9 @@ hr {
   list-style-type: none;
   margin-top: 65px;
   margin: auto;
-    display: flex;
-    line-height: 55px;
-    flex-direction: column;
+  display: flex;
+  line-height: 55px;
+  flex-direction: column;
   cursor: url("ParaRosettaCursor.png"), auto;
 }
 
@@ -436,8 +429,8 @@ hr {
   letter-spacing: 1.3px;
 }
 
-.social-text a{
-    color: white;
+.social-text a {
+  color: white;
 }
 
 #h2social {
@@ -456,6 +449,170 @@ hr {
   align-content: center;
 }
 
+@media screen and (max-width: 540px) {
+  .para-com {
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 52px;
+    position: relative;
+    margin-top: 200px;
+    align-content: center;
+  }
+
+  .paracord-header {
+    font-family: sans-serif;
+    display: flex;
+    font-size: 45px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    position: relative;
+    margin-top: -60px;
+    animation: slide 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0, -100px);
+      color: black;
+    }
+    100% {
+      color: white;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      font-weight: 600;
+      transform: translate(0, 0);
+      align-content: center;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .paracord-badass {
+    font-family: sans-serif;
+    display: flex;
+    font-size: 34px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: -60px;
+    animation: slide-up 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translate(-100px, -100px);
+      color: black;
+    }
+    100% {
+      color: white;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      transform: translate(0, 50px);
+      font-weight: 600;
+      align-content: center;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .paracord-style {
+    font-family: sans-serif;
+    display: flex;
+    font-size: 34px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: -25px;
+    animation: slide-right 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide-right {
+    0% {
+      transform: translate(-300px, -300px);
+      color: black;
+    }
+    100% {
+      color: white;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      transform: translate(0, 50px);
+      justify-content: center;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      align-content: center;
+    }
+  }
+
+  .etsy-animate {
+    font-family: sans-serif;
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: -25px;
+    animation: slide-down 3s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide-down {
+    0% {
+      transform: translate(-300px, -300px);
+      color: black;
+    }
+    100% {
+      color: white;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      transform: translate(0, 200px);
+      justify-content: center;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      align-content: center;
+    }
+  }
+
+  .more-info-div,
+  #bracelets-more-div,
+  #keychains-more-div,
+  #zippers-more-div,
+  #wallets-more-div,
+  #belts-more-div {
+    width: 370px;
+    margin-top: 400px;
+  }
+
+  .img-container {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 25px;
+    margin: 10px;
+    border: 8px solid black;
+  }
+
+  .img-container .style-pics {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    transition: transform 1s ease;
+  }
+
+  .more-info-button {
+    left: 24%;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .more-info-div {
@@ -476,32 +633,34 @@ hr {
     position: absolute;
     overflow: hidden;
   }
-  #bracelets-more-div{
+  #bracelets-more-div {
     margin-top: -450px;
   }
-  #keychains-more-div{
+  #keychains-more-div {
     margin-top: 50px;
   }
-  #belts-more-div{
+  #belts-more-div {
     margin-top: 490px;
   }
-  #wallets-more-div{
+  #wallets-more-div {
     margin-top: 990px;
   }
-  #zippers-more-div{
+  #zippers-more-div {
     margin-top: 1490px;
+  }
+  #edward {
+    height: 300px;
   }
 }
 
 @media screen and (min-width: 1001px) {
-  #belts-more-div{
+  #belts-more-div {
     margin-top: 250px;
   }
-  #wallets-more-div{
+  #wallets-more-div {
     margin-top: 250px;
   }
-  #zippers-more-div{
+  #zippers-more-div {
     margin-top: 750px;
   }
-  
 }
